@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>The Grass</title>
+<link rel="stylesheet" href="thegrass.css">
+<link rel="stylesheet" href="path/to/framework7-bundle.min.css">
+<style>
+/*---------Section 2---------*/
+.benefit {
+background-color: #826000;
+width: 100vw;
+padding: 50px 150px 50px 150px;
+margin:-1px;
+}
+
+.benefit th {
+border-left: 5px solid #FFE5B4;
+border-right: 5px solid #FFE5B4;
+padding: 0 80px 0 80px;
+color: #FFE5B4;
+font-size: 28px;
+text-align: center;
+
+}
+
+
+
+/*---------Section 3---------*/
+.history {
+background-color: transparent;
+margin-top: 100px;
+font-size: 24px;
+color: #826000;
+}
+
+.history th {
+background-color: transparent;
+padding: 0 50px 0 50px;
+}
+
+.history p {
+text-align: left;
+}
+
+.history H1 {
+text-align: left;
+}
+
+.history img {
+border-radius: 110px;
+text-align: center;
+padding: 50px 0 50px 0;
+}
+
+.historybutton {
+text-align: center;
+backgound-color: transparent;
+border: 2px solid #826000;
+font-size: 20px;
+color: #826000;
+position: relative;
+padding: 5px 30px 5px 30px;
+text-decoration: none;
+border-radius: 10px;
+cursor: pointer;
+}
+
+.historybutton:hover {
+background-color: #826000;
+color: #FFE5B4;
+}
+
+
+/*---------Section 4---------*/
+.menuNav {
+width: 100vm;
+position: relative;
+background-color: #826000;
+margin-top: -20px;
+color: #FFE5B4;
+list-style: none;
+}
+
+.menuNav li {
+list-style: none;
+font-size: 24px;
+text-align: center;
+}
+
+.menuNav img {
+position: relative;
+text-align: center;
+border-radius: 50px;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.button {
+backgound-color: transparent;
+border: 2px solid #FFE5B4;
+font-size: 20px;
+color: #FFE5B4;
+text-align: center;
+position: relative;
+padding: 5px 30px 5px 30px;
+text-decoration: none;
+border-radius: 10px;
+cursor: pointer;
+}
+
+.button:hover {
+background-color: #FFE5B4;
+color: #826000;
+}
+
+
+/*---------Section 5---------*/
+.marquee {
+background-color: transparent;
+width: 100vw;
+height: 40vh;
+overflow: hidden;
+margin-top: -300px;
+margin-bottom: 150px;
+}
+
+.marquee-content {
+list-style: none;
+height: 100%;
+display: flex;
+animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+0% {transform: translateX(-1.8vw);}
+100% {transform: translateX(-218.5vw);}
+}
+
+.marquee-content li{
+display: flex;
+justify-content: center;
+align-items: center;
+border: 10px solid transparent;
+width: 20vw;
+flex-shrink: auto;
+white-space: nowrap;
+}
+
+.marquee-content:hover {
+  animation-play-state: paused;
+}
+
+/*---------Section 6----------*/
+
+.review-container {
+max-width: 100%;
+position: relative;
+margin: auto;
+background-color: transparent;
+margin-bottom: 250px;
+margin-left: 250px;
+margin-right: 250px;
+}
+
+.review-container table {
+border-collapse: seperate;
+border-spacing: 20px;
+}
+
+.review-container tr{
+background-color: transparent;
+border-radius: 20px;
+vertical-align: text-top;
+text-align: center;
+}
+
+.review-container td{
+border: 1px solid #000000;
+background-color: #FEF7E2;
+color: #826000;
+font-size: 18px;
+width: 20%;
+border-radius: 20px;
+box-shadow: 1px 5px #826000;
+padding: 50px 60px 50px 60px;
+}
+
+.review-container img{
+width: 250px;
+border-radius: 100%;
+}
+
+
+/*---------Section 7----------*/
+
+.visit th {
+box-sizing: border-box;
+width: 100vw;
+background-color: transparent;
+padding: 50px 0 50px 0;
+text-align: left;
+}
+
+.visit li{
+list-style-type: square;
+font-size:20px;
+color: #826000;
+text-align: center;
+}
+
+.visit a{
+backgound-color: transparent;
+border: 2px solid #826000;
+font-size: 20px;
+color: #826000;
+text-align: center;
+position: relative;
+padding: 5px 30px 5px 30px;
+margin-left: 200px;
+text-decoration: none;
+border-radius: 10px;
+cursor: pointer;
+}
+
+.visit a:hover {
+background-color: #826000;
+color: #FFE5B4;
+}
+
+.visit img {
+align-items: left;
+margin-right: 400px;
+width: 50%;
+border-radius: 50px;
+}
+
+.visit p {
+font-size: 24px;
+text-align: left;
+margin-top: 20px;
+margin-right: 100px;
+margin-left: 200px;
+}
+</style>
+
+</head>
+
+<body>
+<div id="app">
+<div class="view view-main">
+<div data-name="home" class="page">
+
+
+<table style="width: 100%;"><tr>
+<th><img src="image/logo_black.removebg.png" style="background-repeat: no-repeat; width: 100px;"></img></th>
+<th><nav class="navbar">
+<div class="topnav" id="myTopnav">
+  <a href="home.html">THEGRASS</a>
+  <a href="history.html">HISTORY</a>
+  <a href="menu.html">MENU</a>
+  <a href="outlets.html">OUTLETS</a>
+  <a href="promotion.html">PROMOTION</a>
+  <a href="contact.html">CONTACT US</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div></th></tr>
+</table>
+
+
+
+<main>
+<section id="1">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="image/home/home_img01.png" alt="Malaysia No.1 Cincau" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <img src="image/home/home_img02.png" alt="Mix Fruity Iced Dessert"style="width:100%">
+</div>
+<div class="mySlides fade">
+  <img src="image/home/home_img03.png" alt="Dessert-Uji Matcha Iced Dessert & Mix Fruity Iced Dessert" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <img src="image/home/home_img04.png" alt="Mini Bowl" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <img src="image/home/home_img05.png" alt="Fresh Tropical Fruity Juice" style="width:100%">
+</div>
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center; margin-top:-50px;">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+</section>
+
+
+<section id="2">
+<div class="container">
+<table class="benefit">
+<tr>
+<th>Sore Throat Remedy</th>
+<th>Boost Immune System</th>
+<th>Lower Blood Pressure</th>
+<th>Supports Digestion</th>
+</tr>
+</table>
+</div>
+</section>
+
+
+
+
+<section id="3">
+<div class="container">
+<div class="history">
+<table>
+<tr>
+<th>
+<img src="image/home/home_img04.jpg" alt="The Grass history"></th>
+<th>
+<h2>ABOUT US</h2>
+<p>Our ancestors have been expert masters in making grass jelly. In Taiping, our family has been manufacturing grass jelly for 3 generations. Herbs are boiled for 8 hours and the herbal juice is cooled to make the grass jelly. It is served as desserts or beverages, healthy and refreshing. Its fragrance and pure taste are our main concern.
+<br/>
+<br/>
+<a class="historybutton" href="history.html">HISTORY</a></p>
+</th>
+</tr>
+</table>
+</div>
+</div>
+</section>
+
+
+<img src="image/straight%20divider_03.svg" alt="section divider"></img>
+
+
+<section id="4">
+<div class="menuNav">
+<ul>
+<li><img style="width: 200px" src="image/logo_white.removebg.png"></img></li>
+<li><h2>Malaysia No.1 Cincau - Since 1961 -</h2></li>
+<li></li>
+<li>Indulge yourself with our variety of desserts made of grass jelly.</li>
+<li>Choose from our diverse selection of freshly prepared options,</li>
+<li>bursting with sweet goodness,</li>
+<li>from signature desserts to signature grass jelly drink.</li>
+<li>
+<img style="width: 500px;" src="image/home/home_img05.jpg" alt="THE GRASS Desserts"></img>
+</li>
+<li><a class="button" href="menu.html">MENU</a></li>
+</ul>
+</section>
+
+<img src="image/straight%20divider_02.svg" alt="section divider"></img>
+
+
+<section id="5">
+<div class="marquee">
+<ul class="marquee-content">
+<li><img style="width:300px;" src="image/home/home_img06.jpg" alt="Cheese Cream Kiwi Slushy"></img></li>
+<li><img style="width:300px;" src="image/home/home_img07.jpg" alt="Mix Fruity Iced Dessert"></img></li>
+<li><img style="width:300px;" src="image/home/home_img08.jpg" alt="Signature Grass Tea"></img></li>
+<li><img style="width:300px;" src="image/home/home_img09.jpg" alt="Fresh Tropical Fruity Juice"></img></li>
+<li><img style="width:300px;" src="image/home/home_img10.jpg" alt="Signature Grass Jelly Iced Dessert"></img></li>
+<li><img style="width:300px;" src="image/home/home_img11.jpg" alt="Signature Grass Milk Tea"></img></li>
+<li><img style="width:300px;" src="image/home/home_img12.jpg" alt="Signature Grass Jelly Iced Dessert"></img></li>
+<li><img style="width:300px;" src="image/home/home_img13.jpg" alt="Japanese Uji Matcha"></img></li>
+<li><img style="width:300px;" src="image/home/home_img14.jpg" alt="Hot Glutinous Rice"></img></li>
+<li><img style="width:300px;" src="image/home/home_img15.jpg" alt="Honey Jade Iced Dessert"></img></li>
+<li><img style="width:300px;" src="image/home/home_img16.jpg" alt="Pure Mango Milk Tea"></img></li>
+<li><img style="width:300px;" src="image/home/home_img17.jpg" alt="Uji Matcha Iced Dessert"></img></li>
+<li><img style="width:300px;" src="image/home/home_img18.jpg" alt="Vanilla Chocolate"></img></li>
+<li><img style="width:300px;" src="image/home/home_img06.jpg" alt="Cheese Cream Kiwi Slushy"></img></li>
+<li><img style="width:300px;" src="image/home/home_img07.jpg" alt="Mix Fruity Iced Dessert"></img></li>
+<li><img style="width:300px;" src="image/home/home_img08.jpg" alt="Signature Grass Tea"></img></li>
+<li><img style="width:300px;" src="image/home/home_img09.jpg" alt="Fresh Tropical Fruity Juice"></img></li>
+<li><img style="width:300px;" src="image/home/home_img10.jpg" alt="Signature Grass Jelly Iced Dessert"></img></li>
+<li><img style="width:300px;" src="image/home/home_img11.jpg" alt="Signature Grass Milk Tea"></img></li>
+<li><img style="width:300px;" src="image/home/home_img12.jpg" alt="Signature Grass Jelly Iced Dessert"></img></li>
+</div>
+</section>
+
+
+
+<section id="6">
+<div class="container" style="margin-bottom:50px; text-align: center;"><h2>Don't just take our word for it</h2>
+<p>Here are some of the 50+ Google reviews we've received so far!</p></div>
+<div class="review-container">
+<table>
+<tr>
+<td><img src="image/home/review/review01.jpg" alt="PL Teoh review"></img><br/><br/>PL Teoh<br/>★★★★★<br/>I absolutely love this dessert shop! The variety of treats is incredible, and each one is beautifully crafted with fresh, high-quality ingredients. The staff is always friendly and helpful, making the experience even more enjoyable. <br/><br/>I highly recommend this shop to anyone with a sweet tooth looking for top-notch desserts and excellent service.</td>
+
+<td><img src="image/home/review/review02.jpg" alt="Aaron Ng review"></img><br/><br/>Aaron Ng<br/>★★★★★<br/>Came here on a quiet Sunday night close to closing hour.
+Thought the shop was pretty quiet. However, staffs were pretty attentive and cheerful. Dessert quality is definitely good. A good dessert shop “hidden” in the heart of BM. A good place to accomodate a group of up to 6 person as they have seatings to cater for that. If you have issue finding parking, refer to the parking note by one of the reviewers in this review list. 
+<br/>Would come again ?
+Yes 😀</td>
+
+<td><img src="image/home/review/review03.jpg" alt="Jason C review"></img><br/><br/>Jason C<br/>★★★★☆<br/>Nice dessert options in a calm and airy space that's well cooled due to the AC.
+Tried the bestseller green tea matcha option. The taste is OK, presentation is eye catching and serving size is good for the rather high price paid considering the old market surroundings. However the green tea option lacks oomph. The green tea flavor isn't strong and the ice, although very finely grinded, doesn't stand out in its taste. Choose a table with a small aquarium so you can see the guppies swimming as you eat and chitchat. Biggest downside is the service. First dish took about 13 mins to arrive when the place wasn't even half full. Slow inefficient service. Park next door at the hokkien center which is foc. Or park right outside the shop which has 2 very narrow slot in parking lots.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</section>
+
+
+
+<section id="7">
+<div class="visit">
+<table>
+<tr>
+<th>
+<h1>Our Grass Jelly Mastery</h1>
+<p>For three generations, our family in Taiping has been perfecting the art of crafting exquisite grass jelly, maintaining a tradition of quality and excellence.</p>
+<p>With a commitment to fragrance and pure taste, our rich heritage and exceptional quality ensure an unforgettable experience in every bite.</p>
+<br/>
+<a href="outlets.html">VISIT US</a>
+</th>
+<th>
+<img src="image/home/home_img.jpg" alt="Signature Grass Jelly Iced Dessert"></th></tr>
+</table>
+</div>
+</section>
+
+
+</main>
+
+
+
+<img src="image/straight%20divider.svg" alt="section divider"></img>
+
+
+<section id="Quick_link">
+
+<div class="bottomNav">
+<center><table style="text-align:left;"><tr><th >
+<ul>
+<li><center>Quick Links</center></li>
+<li><a href="history.html">History</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="outlets.html">Outlets</a></li>
+<li><a href="promotion.html">Promotion</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+</ul></th>
+<th>
+<div class="social">Follow us</div>
+<div class="social"><a href="https://www.facebook.com/Thegrassmalaysia">
+<img style="width: 30px;" src="image/icon_facebook_removebg.png" alt="facebook"></img></a>
+</div>
+</th>
+</tr>
+</table></center>
+</div>
+</section>
+
+<div class="footer">
+2024 &copy; Assignment ICT1102E MAY_Group 2
+</div>
+
+<script src="thegrass.js"></script>
+</div></div></div>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>The Grass</title>
+<link rel="stylesheet" href="thegrass.css">
+
+
+
+<style>
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #826000;
+  color: #FFE5B4;
+font: 24px;
+border-radius: 10px;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+background-color: #FFE5B4;
+color: #826000;
+}
+
+/* Style the container/contact section */
+.contact_container {
+border-radius: 5px;
+background-color: #FFE5B4;
+padding: 10px;
+text-align:center;
+}
+
+/* Create two columns that float next to each other */
+.contact_column {
+border: 0px solid black;
+float: left;
+width: 50vw;
+margin-top: 20px;
+margin-left: auto;
+padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+</style>
+
+
+
+</head>
+
+<body>
+<table style="width: 100%;"><tr>
+<th><img src="image/logo_black.removebg.png" alt="The Grass logo_black" style="background-repeat: no-repeat; width: 100px;"></img></th>
+<th><nav class="navbar">
+<div class="topnav" id="myTopnav">
+  <a href="home.html">THEGRASS</a>
+  <a href="history.html">HISTORY</a>
+  <a href="menu.html">MENU</a>
+  <a href="outlets.html">OUTLETS</a>
+  <a href="promotion.html">PROMOTION</a>
+  <a href="contact.html">CONTACT US</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div></th></tr>
+</table>
+
+<div class="cover">
+<img src="image/contact/contact_cover.png"></img></div>
+
+
+<main>
+<h1>CONTACT US</h1>
+<div class="contact_container">
+<p>Swing by for a bowl grass jelly sweetness, or leave us a message:</p>
+</div>
+<div class="contact_column">
+		<form action="/action_page.php">
+			<label for="fname">Full Name</label>
+			<input type="text" id="fname" name="fullname" placeholder="Your Name..">
+			<label for="email">Email</label>
+			<input type="text" id="email" name="email" placeholder="Email Here..">
+			<label for="pnumber">Phone Number</label>
+			<input type="text" id="pnumber" name="phonenumber" placeholder="+60..">
+			<label for="subject">Subject</label>
+			<textarea id="subject" name="subject" placeholder="Your Message.." style="height:170px"></textarea>
+			<input type="submit" value="SUBMIT">
+		</form>
+</div>		
+
+</main>
+
+
+
+<img src="image/straight%20divider.svg" alt="section divider"></img>
+
+
+<section id="Quick_link">
+
+<div class="bottomNav">
+<center><table style="text-align:left;"><tr><th>
+<ul>
+<li><center>Quick Links</center></li>
+<li><a href="home.html">Home</a></li>
+<li><a href="history.html">History</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="outlets.html">Outlets</a></li>
+<li><a href="promotion.html">Promotion</a></li>
+</ul></th>
+<th>
+<div class="social">Follow us</div>
+<div class="social"><a href="https://www.facebook.com/Thegrassmalaysia">
+<img style="width: 30px;" src="image/icon_facebook_removebg.png" alt="facebook"></img></a>
+</div>
+</th>
+</tr>
+</table></center>
+</div>
+</section>
+
+<div class="footer">
+2024 &copy; Assignment ICT1102E MAY_Group 2
+</div>
+
+<script src="thegrass.js"></script>
+
+</body>
+</html>

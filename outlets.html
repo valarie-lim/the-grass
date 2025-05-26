@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>The Grass</title>
+<link rel="stylesheet" href="thegrass.css">
+
+
+
+<style>
+.outlet {
+width: 50vw;
+margin: auto;
+text-align: left;
+}
+
+.outlet th{
+text-align: center;
+height: 40px;
+}
+
+.outlet td{
+border: 1px solid #000000;
+padding: 10px;
+margin-top: 20px;
+}
+
+.outlet img{
+width: 200px;
+border-radius: 10px;
+margin-top: 10px;
+}
+
+
+/*---------Outlet-Images---------*/
+.item {
+vertical-align: top;
+display: inline-block;
+text-align: center;
+width: auto;
+}
+
+.caption {
+display: block;
+}
+
+.marquee-outlet {
+background-color: transparent;
+width: 100vw;
+height: 30vh;
+overflow: hidden;
+margin-top: 50px;
+margin-bottom: auto;
+}
+
+.marquee-outlet-content {
+list-style: none;
+height: 100%;
+display: flex;
+animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+0% {transform: translateX(0vw);}
+100% {transform: translateX(-230vw);}
+}
+
+
+.marquee-outlet-content li{
+display: flex;
+justify-content: center;
+align-items: center;
+border: 10px solid transparent;
+width: 20vw;
+flex-shrink: auto;
+white-space: nowrap;
+}
+
+.marquee-outlet-content:hover {
+animation-play-state: paused;
+cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+<table style="width: 100%;"><tr>
+<th><img src="image/logo_black.removebg.png" alt="The Grass logo_black" style="background-repeat: no-repeat; width: 100px;"></img></th>
+<th><nav class="navbar">
+<div class="topnav" id="myTopnav">
+  <a href="home.html">THEGRASS</a>
+  <a href="history.html">HISTORY</a>
+  <a href="menu.html">MENU</a>
+  <a href="outlets.html">OUTLETS</a>
+  <a href="promotion.html">PROMOTION</a>
+  <a href="contact.html">CONTACT US</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div></th></tr>
+</table>
+
+<div class="cover">
+<img src="image/outlets/outlets_cover.png" alt="Outlets Cover Photo"></img></div>
+
+<main>
+<h1>OUTLETS</h1>
+
+<div class="container">
+<section id="outlet-name">
+<div class="outlet">
+<table>
+<tr>
+<th>Name</th>
+<th>Address</th>
+	</tr>
+	<tr>
+	<td>The Grass Queensbay Mall</td>
+	<td>1F - 05 Queensbay Mall, Persiaran 3021, Persiaran Bayan Indah, 11900 Bayan Lepas, Penang </td>
+	</tr>
+
+	<tr>
+	<td>The Grass Elite Avenue Penang</td>
+	<td>1-1-18 Elite Avenue, Jalan Mayang Pasir 3, 11950 Bayan Baru, Penang</td>
+	</tr>
+
+	<tr>
+	<td>The Grass Butterworth</td>
+	<td>30, Lorong Teras Jaya 2, Kawasan Perindustrian Ringan Teras Jaya,13400 Butterworth, Penang</td>
+	</tr>
+
+	<tr>
+	<td>The Grass Bukit Mertajam</td>
+	<td>No 258, Jalan Datuk Ooh Chooi Cheng, 14000 Bukit Mertajam, Pulau Pinang</td>
+	</tr>
+
+	<tr>
+	<td>The Grass Taiping Mall</td>
+	<td>LG - 31, Jalan Tupai, Persiaran Taiping, Taiping Mall, 34000 Taiping Perak</td>
+	</tr>
+
+	<tr>
+	<td>The Grass Greentown</td>
+	<td>No 8, Persiaran Greentown 8, Pusat Perdagangan Greentown, 30450 Ipoh, Perak</td>
+	</tr>
+
+	<tr>
+	<td>The Grass Pavillion Bukit Jalil</td>
+	<td>4.28.01, Level 4, Pavilion, Persiaran Jalil Utama, Bukit Jalil, 57000 Kuala Lumpur, Federal Territory of Kuala Lumpur</td>
+	</tr>
+
+	<tr>
+	<td>The Grass Pavillion Damansara Height</td>
+	<td>P4.06.00, Level 4, Pavillion, Damansara Heights, Bangsar,  50490 Kuala Lumpur</td>
+	</tr>
+
+	<tr>
+	<td>The Grass IOI City Mall</td>
+	<td>L2-K204 Second Floor, IOI City Mall,  IOI Resort, 62502 Putrajaya</td>
+	</tr>
+
+	<tr>
+	<td>The Grass Labuan</td>
+	<td>G-19, Ground Floor, Paragon Labuan, Jalan Off Tun Mustapha, 87000 W.P.Labuan</td>
+	</tr>
+
+	<tr>
+	<td>The Grass Canaan Sarawak</td>
+	<td>B-G-7, Ground Floor, Canaan Square Business Hub, Jalan Stutong Baru, 93350 Kuching, Sarawak</td>
+	</tr>
+
+	<tr>
+	<td>The Grass Botanik</td>
+	<td>26-1A, Jalan Resak 1/KS7, Bandar Botanic, 41200 Klang, Selangor</td>
+	</tr>
+
+	<tr>
+	<td>The Grass Sungai Petani</td>
+	<td>No.250, Ground Floor, Jalan Mawar 3/3, Taman Pekan Baru, 08000 Sungai Petani, Kedah</td>
+	</tr>
+
+	<tr>
+	<td>The Grass JB Mount Austin</td>
+	<td>6 & 8, Jalan Austin Heights 7/7, Taman Mount Austin, 81100 Johor Bahru, Johor</td>
+	</tr>
+</table>
+</div>
+</section>
+
+<section id="Outlets_image">
+<div class="marquee-outlet">
+<ul class="marquee-outlet-content">
+<li><div class="item">
+<a href="https://www.facebook.com/p/The-Grass-Queensbaymall-100054760570279/"><img style="width:300px;" src="image/outlets/The%20Grass%20Queensbay%20Mall.jpg" alt="The Grass Queensbay Mall"></img></a>
+<span class="caption">The Grass Queensbay Mall</span></div></li>
+<li><div class="item">
+<a href="https://www.facebook.com/thegrasseabb/"><img style="width:300px;" src="image/outlets/The%20Grass%20Elite%20Avenue%20Penang.jpg" alt="The Grass Elite Avenue Penang"></img></a>
+<span class="caption">The Grass Elite Avenue Penang</span></div></li>
+<li><div class="item">
+<a href="https://www.facebook.com/p/The-Grass-Raja-Uda-100053561535925/"><img style="width:300px;" src="image/outlets/The%20Grass%20Butterworth.jpg" alt="The Grass Butterworth"></img></a>
+<span class="caption">The Grass Butterworth</span></div></li>
+<li><div class="item">
+<a href="https://www.facebook.com/thegrassbukitmertajam/"><img style="width:300px;" src="image/outlets/The%20Grass%20Bukit%20Mertajam.jpg" alt="The Grass Bukit Mertajam"></img></a>
+<span class="caption">The Grass Bukit Mertajam</span></div></li>
+<li><div class="item">
+<a href="https://www.facebook.com/THEGRASS1961/"><img style="width:300px;" src="image/outlets/The%20Grass%20Taiping%20Mall.jpg" alt="The Grass Taiping Mall"></img></a>
+<span class="caption">The Grass Taiping Mall</span></div></li>
+<li><div class="item">
+<a href="https://www.facebook.com/p/The-Grass-Ipoh-100069726206135/"><img style="width:300px;" src="image/outlets/The%20Grass%20Greentown.jpg" alt="The Grass Greentown"></img></a>
+<span class="caption">The Grass Greentown</span></div></li>
+<li><div class="item">
+<a href="https://www.instagram.com/thegrasspavilion2/"><img style="width:300px;" src="image/outlets/The%20Grass%20Pavilion%20Bukit%20Jalil.jpg" alt="The%20Grass%20Pavilion%20Bukit%20Jalil.jpg"></img></a>
+<span class="caption">The Grass Pavilion Bukit Jalil</span></div></li>
+<li><div class="item">
+<a href="https://pavilion-dh.com/stores/the-grass/"><img style="width:300px;" src="image/outlets/The%20Grass%20Pavilion%20Damansara%20Height.jpg" alt="The Grass Pavilion Damansara Height"></img></a>
+<span class="caption">The Grass Pavilion Damansara Height</span></div></li>
+<li><div class="item">
+<a href="https://www.ioicitymall.com.my/about-tenant/?pid=5476"><img style="width:300px;" src="image/outlets/The%20Grass%20IOI%20City%20Mall.jpg" alt="The Grass IOI City Mall"></img></a>
+<span class="caption">The Grass IOI City Mall</span></div></li>
+<li><div class="item">
+<a href="https://www.facebook.com/thegrasslabuan/"><img style="width:300px;" src="image/outlets/The%20Grass%20Labuan.jpg" alt="The Grass Labuan"></img></a>
+<span class="caption">The Grass Labuan</span></div></li>
+<li><div class="item">
+<a href="https://www.facebook.com/thegrasskch/"><img style="width:300px;" src="image/outlets/The%20Grass%20Canaan%20Sarawak.jpg" alt="The Grass Canaan Sarawak"></img></a>
+<span class="caption">The Grass Canaan Sarawak</span></div></li>
+<li><div class="item">
+<a href="https://www.facebook.com/TheGrassSungaiPetani/"><img style="width:300px;" src="image/outlets/The%20Grass%20Sungai%20Petani.jpg" alt="The Grass Sungai Petani"></img></a>
+<span class="caption">The Grass Sungai Petani</span></div></li>
+<li><div class="item">
+<a href="https://www.facebook.com/thegrassjb/"><img style="width:300px;" src="image/outlets/The%20Grass%20JB%20Mount%20Austin.jpg" alt="The Grass JB Mount Austin"></img></a>
+<span class="caption">The Grass JB Mount Austin</span></div></li>
+
+
+<li><div class="item">
+<a href="https://www.facebook.com/p/The-Grass-Queensbaymall-100054760570279/"><img style="width:300px;" src="image/outlets/The%20Grass%20Queensbay%20Mall.jpg" alt="The Grass Queensbay Mall"></img></a>
+<span class="caption">The Grass Queensbay Mall</span></div></li>
+<li><div class="item">
+<a href="https://www.facebook.com/thegrasseabb/"><img style="width:300px;" src="image/outlets/The%20Grass%20Elite%20Avenue%20Penang.jpg" alt="The Grass Elite Avenue Penang"></img></a>
+<span class="caption">The Grass Elite Avenue Penang</span></div></li>
+<li><div class="item">
+<a href="https://www.facebook.com/p/The-Grass-Raja-Uda-100053561535925/"><img style="width:300px;" src="image/outlets/The%20Grass%20Butterworth.jpg" alt="The Grass Butterworth"></img></a>
+<span class="caption">The Grass Butterworth</span></div></li>
+<li><div class="item">
+<a href="https://www.facebook.com/thegrassbukitmertajam/"><img style="width:300px;" src="image/outlets/The%20Grass%20Bukit%20Mertajam.jpg" alt="The Grass Bukit Mertajam"></img></a>
+<span class="caption">The Grass Bukit Mertajam</span></div></li>
+<li><div class="item">
+<a href="https://www.facebook.com/THEGRASS1961/"><img style="width:300px;" src="image/outlets/The%20Grass%20Taiping%20Mall.jpg" alt="The Grass Taiping Mall"></img></a>
+<span class="caption">The Grass Taiping Mall</span></div></li>
+<li><div class="item">
+<a href="https://www.facebook.com/p/The-Grass-Ipoh-100069726206135/"><img style="width:300px;" src="image/outlets/The%20Grass%20Greentown.jpg" alt="The Grass Greentown"></img></a>
+<span class="caption">The Grass Greentown</span></div></li>
+<li><div class="item">
+<a href="https://www.instagram.com/thegrasspavilion2/"><img style="width:300px;" src="image/outlets/The%20Grass%20Pavilion%20Bukit%20Jalil.jpg" alt="The%20Grass%20Pavilion%20Bukit%20Jalil.jpg"></img></a>
+<span class="caption">The Grass Pavilion Bukit Jalil</span></div></li>
+
+</ul>
+</div></section>
+</div>
+</main>
+
+
+
+<img src="image/straight%20divider.svg" alt="section divider"></img>
+
+
+<section id="Quick_link">
+
+<div class="bottomNav">
+<center><table style="text-align:left;"><tr><th >
+<li><center>Quick Links</center></li>
+<ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="history.html">History</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="promotion.html">Promotion</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+</ul></th>
+<th>
+<div class="social">Follow us</div>
+<div class="social"><a href="https://www.facebook.com/Thegrassmalaysia">
+<img style="width: 30px;" src="image/icon_facebook_removebg.png" alt="facebook"></img></a>
+</div>
+</th>
+</tr>
+</table></center>
+</div>
+</section>
+
+<div class="footer">
+2024 &copy; Assignment ICT1102E MAY_Group 2
+</div>
+
+<script src="thegrass.js"></script>
+
+</body>
+</html>
