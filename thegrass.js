@@ -1,12 +1,9 @@
 /*top navigation bar*/
-function myFunction() {
+function toggleNav() {
   var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
+  x.classList.toggle("responsive");
 }
+
 
 /*slideshow*/
 let slideIndex = 1;
@@ -34,4 +31,5 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
+
 }
